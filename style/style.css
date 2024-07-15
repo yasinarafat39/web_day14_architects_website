@@ -222,17 +222,16 @@ header {
 
 }
 
-.fact-container { 
-     justify-content: space-between;
-     align-items: center; 
-    flex-wrap: wrap;
+.fact-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .fact-card {
     text-align: center;
     border: 1px solid rgb(255, 144, 14);
-    border-radius: 8px;   
-    width: 15rem; 
+    border-radius: 8px;
+    width: 15rem;
     height: 15rem;
     display: flex;
     justify-content: center;
@@ -252,6 +251,20 @@ header {
 
 /* responsive design for facts */
 
-@media screen and (min-width: 577px) and (max-width: 992px) {
+@media screen and (max-width: 576px) {
+    .fact-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+.fact-card{
+    width: 100%;
+}
+    .fact-description {
+        width: 100%;
+    }
 
+    .some-facts { 
+        padding: 1.1rem;
+    }
 }
