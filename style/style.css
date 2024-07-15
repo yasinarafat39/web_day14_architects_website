@@ -51,42 +51,16 @@ body {
     font-weight: 600;
     line-height: 23px;
     border: none;
+    cursor: pointer;
 }
 
 /* -------------------- */
 
 /* navbar */
-
-header {
-    padding: 50px 240px 45px;
-    background: rgba(255, 144, 14, 0.1);
-}
-
-.header-content {
-    margin: 102px 0 50px;
-    text-align: center;
-    margin: 102px 286px 50px;
-}
-
-.header-caption {
-    font-size: 4rem;
-    font-weight: 700;
-    line-height: 75px;
-}
-
-.header-description {
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 26px;
-    margin: 33px 0;
-}
-
 .navbar {
     align-items: center;
     justify-content: space-between;
 }
-
-.nav-links {}
 
 .brand-name {
     font-size: 2.8rem;
@@ -107,4 +81,55 @@ header {
     font-size: 1.1rem;
     font-weight: 500;
     line-height: 26px;
+}
+
+/* header / Hero  */
+
+header {
+    padding: 3.1rem 15rem 2.8rem;
+    background: rgba(255, 144, 14, 0.1);
+}
+
+.header-content {
+    margin: 6.3rem 18rem 3.1rem;
+    text-align: center;
+}
+
+.header-caption {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 75px;
+}
+
+.header-description {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+    margin: 33px 0;
+}
+
+.header-img {
+    width: 100%;
+}
+
+
+
+/* responsive design */
+
+@media screen and (max-width: 576px){
+    .navbar, .nav-links{
+        flex-direction: column;
+    }
+
+    .nav-item{
+        margin: 1rem 0;
+    }
+
+    header{
+        padding: 1.1rem;
+    }
+
+    .header-content{
+        margin: 2.3rem 1.1rem 3.1rem;
+    }
 }
