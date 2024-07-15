@@ -122,6 +122,7 @@ header {
 
 /* responsive design */
 
+
 @media screen and (max-width: 576px) {
 
     .navbar,
@@ -142,18 +143,19 @@ header {
     }
 }
 
+ 
 
 /* main section */
 
 
-.teams{
+.teams {
     justify-content: space-between;
     align-items: center;
     gap: 4.5rem;
     padding: 3.8rem;
 }
 
-.team-img-container{
+.team-img-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
@@ -165,10 +167,39 @@ header {
     line-height: 53px;
 }
 
-.team-title .first-two-word{
+.team-title .first-two-word {
     font-weight: 500;
 }
 
-.team-description{
+.team-description {
     margin: 1.5rem 0 2rem;
+}
+
+/* Responsive design for Quick list of our features */
+
+@media screen and (max-width: 576px) {
+    .teams {
+        flex-direction: column;
+        padding: 1.1rem;
+    }
+
+    .team-img-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+/* medium devices */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    .teams {
+        flex-direction: column;
+    }
+
+    .team-img-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .team-img-container img {
+        width: 100%;
+    }
 }
