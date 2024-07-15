@@ -274,7 +274,7 @@ header {
 
 /* Our sponsors section */
 
-.our-sponsors{
+.our-sponsors {
     margin: 11.2rem 0 8.1rem;
 }
 
@@ -301,4 +301,18 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+/* responsive */
+
+@media screen and (max-width: 576px) {
+    .our-sponsors .sponsors-companies {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .our-sponsors {
+        margin: 5rem 0;
+        padding: 1.2rem;
+    }
 }
