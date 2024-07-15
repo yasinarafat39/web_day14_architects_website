@@ -224,14 +224,15 @@ header {
 
 .fact-container { 
      justify-content: space-between;
-     align-items: center;
+     align-items: center; 
+    flex-wrap: wrap;
 }
 
 .fact-card {
     text-align: center;
     border: 1px solid rgb(255, 144, 14);
-    border-radius: 8px; 
-    width: 15rem;
+    border-radius: 8px;   
+    width: 15rem; 
     height: 15rem;
     display: flex;
     justify-content: center;
