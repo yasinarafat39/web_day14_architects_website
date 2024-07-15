@@ -143,7 +143,7 @@ header {
     }
 }
 
- 
+
 
 /* main section */
 
@@ -202,4 +202,46 @@ header {
     .team-img-container img {
         width: 100%;
     }
+}
+
+
+
+/* Facts section */
+
+.fact-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 53px;
+}
+
+.fact-description {
+    font-size: 1rem;
+    line-height: 26px;
+    margin: 1.5rem 0 6.2rem;
+    width: 33.8rem;
+
+}
+
+.fact-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 7.7rem;
+}
+
+.fact {
+    align-items: center;
+    border: 1px solid rgb(255, 144, 14);
+    border-radius: 8px;
+    padding: 2.8rem 2.2rem;
+}
+
+.fact-number {
+    font-size: 2.8rem;
+    font-weight: 600;
+    line-height: 53px;
+    align-items: center;
+}
+
+.fact-item-title {
+    align-items: center;
 }
