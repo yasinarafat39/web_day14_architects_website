@@ -257,14 +257,48 @@ header {
         grid-template-columns: repeat(1, 1fr);
         gap: 20px;
     }
-.fact-card{
-    width: 100%;
-}
+
+    .fact-card {
+        width: 100%;
+    }
+
     .fact-description {
         width: 100%;
     }
 
-    .some-facts { 
+    .some-facts {
         padding: 1.1rem;
     }
+}
+
+
+/* Our sponsors section */
+
+.our-sponsors{
+    margin: 11.2rem 0 8.1rem;
+}
+
+.sponsors-header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.our-sponsors .header {
+    text-align: center;
+    width: 32rem;
+    margin-bottom: 3.1rem;
+}
+
+.sponsors-title {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 53px;
+    margin: 0 0 24px 0;
+}
+
+.our-sponsors .sponsors-companies {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
